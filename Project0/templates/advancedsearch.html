@@ -36,38 +36,40 @@
 
 
         <div class="container container-custom mt-4">
-            <h5 class="mb-5">Advanced Search</h5>
-            <h6 class="mb-3">Find pages with...</h6>
-            <div class="row mb-3">
-                <label for="allwords" class="col-sm-4 col-form-label">...all these words: </label>
-                <div class="col-sm-8">
-                <input type="text" class="form-control" id="allwords">
-                </div>
-            </div> 
-            <div class="row mb-3">
-                <label for="exactwords" class="col-sm-4 col-form-label">...these exact word or phrase: </label>
-                <div class="col-sm-8">
-                <input type="text" class="form-control" id="exactwords">
-                </div>
-            </div> 
-            <div class="row mb-3">
-                <label for="anywords" class="col-sm-4 col-form-label">...any of these words: </label>
-                <div class="col-sm-8">
-                <input type="text" class="form-control" id="anywords">
-                </div>
-            </div> 
-            <div class="row mb-3">
-                <label for="nonewords" class="col-sm-4 col-form-label">...none of these words: </label>
-                <div class="col-sm-8">
-                <input type="text" class="form-control" id="nonewords">
-                </div>
-            </div> 
-            <div class="row mb-3">
-                <div class="container-fluid container-search text-end">
-                <button type="submit" class="btn btn-primary">Advanced Search</button>
-                </div>
-            </div> 
-        </div>
+            <form action="https://www.google.com/search" method="get" class="mx-auto">
+                <h5 class="mb-5">Advanced Search</h5>
+                <h6 class="mb-3">Find pages with...</h6>
+                <div class="row mb-3">
+                    <label for="allwords" class="col-sm-4 col-form-label">...all these words: </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="allwords" name="q">
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <label for="exactwords" class="col-sm-4 col-form-label">...this exact word or phrase: </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="exactwords" name="as_epq">
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <label for="anywords" class="col-sm-4 col-form-label">...any of these words: </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="anywords" name="as_oq">
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <label for="nonewords" class="col-sm-4 col-form-label">...none of these words: </label>
+                    <div class="col-sm-8">
+                        <input type="text" class="form-control" id="nonewords" name="as_eq">
+                    </div>
+                </div> 
+                <div class="row mb-3">
+                    <div class="container-fluid container-search text-end">
+                        <button type="submit" class="btn btn-light">Advanced Search</button>
+                    </div>
+                </div> 
+            </form>
+        </div>        
     </body>
 
 </html>
