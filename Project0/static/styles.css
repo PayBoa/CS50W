@@ -10,4 +10,10 @@
 
 .container-custom {
     width: 50%;
+    margin-left: 25px;
+}
+
+.container-search {
+    margin-right: 0px;
+    margin-top: 10px;
 }
