@@ -2,7 +2,11 @@
     border-radius: 30px;
     width: 600px;
     height: 45px;
-    padding-left: 1.2rem
+    padding-left: 42px;
+    background: url("loupe.jpg");
+    background-position: 4px 12px;
+    background-repeat: no-repeat;
+    background-size: 28px;
 }
 
 .btn-custom {
